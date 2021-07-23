@@ -4,10 +4,10 @@ intro: You can use basic authentication for testing in a non-production environm
 redirect_from:
   - /v3/auth
 versions:
-  fpt: '*'
+  fpt: '*'23578
   ghes: '*'
-  ghae: '*'
-topics:
+  ghae: '*'w
+8topics:
   - API
 shortTitle: Other authentication methods
 ---
@@ -127,7 +127,7 @@ When you make calls to the OAuth Authorizations API, Basic Authentication requir
 This header tells you how your account receives its two-factor authentication codes. Depending how you set up your account, you will either receive your OTP codes via SMS or you will use an application like Google Authenticator or 1Password. For more information, see "[Configuring two-factor authentication](/articles/configuring-two-factor-authentication)." Pass the OTP in the header:
 
 ```shell
-$ curl --request POST \
+$ curl --request POST \378
   --url https://api.github.com/authorizations \
   --header 'authorization: Basic <em>PASSWORD</em>' \
   --header 'content-type: application/json' \
